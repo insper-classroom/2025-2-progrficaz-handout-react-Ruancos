@@ -10,10 +10,38 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
 .card-title{
     font-family: 'Permanent Marker', cursive;
     font-size: large;
     font-weight: bold;
+    flex: 1;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #ff4444;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.delete-btn:hover {
+    color: #cc0000;
+    transform: scale(1.2);
 }
 
 .card-content{
